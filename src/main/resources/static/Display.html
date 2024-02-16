@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- upload.html -->
+<form action="/files/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <button type="submit">Upload</button>
+</form>
+
+<!-- display.html -->
+<img src="/files/{id}" alt="File" />
+
+<!-- delete.html -->
+<form action="/files/delete/{id}" method="get">
+    <button type="submit">Delete</button>
+</form>
+</body>
+</html>
